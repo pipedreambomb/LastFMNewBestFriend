@@ -9,7 +9,11 @@ LastFMBestFriend::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
+<<<<<<< HEAD
     match 'welcome/index' => 'welcome#index', :as => :welcomeindex
+=======
+  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+>>>>>>> d38e3fd0f70e5fd8a8a2ef3b41d0b1966ea84a3f
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):

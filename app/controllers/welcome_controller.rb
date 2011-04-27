@@ -2,6 +2,7 @@ require 'lastfm'
 
 class WelcomeController < ApplicationController
   def index
+<<<<<<< HEAD
    @lastfm ||= Lastfm.new(APP_CONFIG['lastfmkey'], APP_CONFIG['lastfmsecret'])
    #token = lastfm.auth.get_token
    if params[:q]
@@ -15,6 +16,12 @@ class WelcomeController < ApplicationController
     wants.html
     wants.js
    end
+=======
+  
+ lastfm = Lastfm.new(APP_CONFIG['lastfmkey'], APP_CONFIG['lastfmsecret'])
+ token = lastfm.auth.get_token
+ #lastfm.session = lastfm.auth.get_session(token)
+>>>>>>> d38e3fd0f70e5fd8a8a2ef3b41d0b1966ea84a3f
  end
 
 end
