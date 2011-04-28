@@ -32,8 +32,5 @@ gem 'sqlite3'
 
 gem 'httparty'
 gem 'lastfm'
-<<<<<<< HEAD
 gem 'ruby-debug'
 gem 'rails3-jquery-autocomplete'
-=======
->>>>>>> d38e3fd0f70e5fd8a8a2ef3b41d0b1966ea84a3f

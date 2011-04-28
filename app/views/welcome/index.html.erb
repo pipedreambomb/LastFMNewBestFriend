@@ -1,15 +1,8 @@
-<h1>Welcome!</h1>
+<h1><%= link_to "Welcome!", :welcomeindex %> </h1>
 <p>Hi, this is George's Last.FM Best Friend Finder</p>
-<<<<<<< HEAD
-<% form_tag :welcomeindex, :method => "get" do %>
-	
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
-<% end %>
-<p><%= @user.inspect %></p>
-<p><%= link_to @user['url'], @user['url'] %></p>
-=======
-<p>(more to come shortly)</p> 
-<p><%= @test %></p>
->>>>>>> d38e3fd0f70e5fd8a8a2ef3b41d0b1966ea84a3f
+
+<%= render :partial => 'search_form' %>
+
+
+<p><%= dump %></p>
+<p><%= link %></p>
