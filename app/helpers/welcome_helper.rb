@@ -1,8 +1,12 @@
 module WelcomeHelper
   
-  def dump
+  def user_dump
     return @user.inspect if @user
-    "no user found with username #{params[:q]} , sorry!" if params[:q] and not @user
+    "no user found with username #{params[:q]} , sorry!" if params[:q] unless @user
+  end
+  
+  def neighbours_dump
+    @neighbours.inspect if @neighbours
   end
   
   def link

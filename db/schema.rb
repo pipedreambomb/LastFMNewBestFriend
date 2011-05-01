@@ -10,6 +10,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20110429110213) do
+
+  create_table "neighbours", :force => true do |t|
+    t.string   "user1"
+    t.string   "user2"
+    t.float    "match"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "real_name"
+    t.string   "url"
+    t.string   "image"
+    t.string   "country"
+    t.string   "gender"
+    t.integer  "age"
+    t.integer  "friends"
+    t.integer  "playcount"
+    t.date     "registered_on"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

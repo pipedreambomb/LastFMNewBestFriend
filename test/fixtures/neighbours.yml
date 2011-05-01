@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user1: MyString
+  user2: MyString
+  match: 1.5
+
+two:
+  user1: MyString
+  user2: MyString
+  match: 1.5
